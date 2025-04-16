@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2024/06/RAINBOW-TWIRL@2x-1-2048x250.webp");
+    color: azure;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 4rem;
+}
+
+header h3{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#noticias{
+    background-color: white;
+    text-align: left;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+}
+
+section article{
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.merch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.merch1 {
+    width: 30%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
+}
+
+section article h2, section article p{
+    margin: 1rem;
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3)
+}
+
+footer{
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2024/06/RAINBOW-TWIRL@2x-1-2048x250.webp");
+    padding: 3rem;
+    color: white;
+    clear: both;
+    text-align: center;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: pink;
+}
+
+footer p{
+    margin: 0;
+}
+
+section article img {
+    width: 100%;
+    height: 60%; 
+    object-fit: cover; 
+    border-radius: 0.5rem;
+}

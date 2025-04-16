@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios ganados por Coldplay</title>
+</head>
+<body>
+    <h1>Premios de Coldplay</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre del premio</th>
+            <th>Categoría del premio</th>
+            <th>Año</th>
+            <th>Titulo de la canción ganadora del premio</th>
+        </tr>
+        {% for premio in premios %}  
+        <tr>
+            <td>{{ premio.nombre_premio }}</td>
+            <td>{{ premio.categoria }}</td>
+            <td>{{ premio.anio }}</td>
+            <td>{{ premio.titulo }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

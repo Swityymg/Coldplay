@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercancía de Coldplay</title>
+</head>
+<body>
+    <h1>Mercancía de Coldplay</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre de la mercancía</th>
+            <th>Precio</th>
+            <th>Producto</th>
+            <th>Álbum</th>
+        </tr>
+        {% for item in merch %}
+        <tr>
+            <td>{{ item.nombre_mercancia }}</td>
+            <td>{{ item.precio }}</td>
+            <td>{{ item.producto }}</td>
+            <td>{{ item.nombre_album }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

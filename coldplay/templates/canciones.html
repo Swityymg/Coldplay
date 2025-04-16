@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones de Coldplay</title>
+</head>
+<body>
+    <h1>Canciones de Coldplay</h1>
+    <table border="1">
+        <tr>
+            <th>Canción</th>
+            <th>Género</th>
+            <th>Álbum</th>
+            <th>Año</th>
+        </tr>
+        {% for cancion in canciones %}
+        <tr>
+            <td>{{ cancion.Cancion }}</td>
+            <td>{{ cancion.Genero }}</td>
+            <td>{{ cancion.Album }}</td>
+            <td>{{ cancion.Anio }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
